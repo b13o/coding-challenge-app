@@ -1,50 +1,55 @@
-# React + TypeScript + Vite
+<img width="1440" alt="Image" src="https://github.com/user-attachments/assets/fc6c24a0-7485-43f3-85e8-ffd7d7c305c2" />
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# コーディングチャレンジアプリ
 
-Currently, two official plugins are available:
+## 概要
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+このプロジェクトでは、プログラミング学習のための、コーディングチャレンジアプリを構築します。  
+ユーザーは与えられた課題に対してコードを書き、実行して正解かどうかを確認できます。
 
-## Expanding the ESLint configuration
+## 学習目標
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+React のカスタムフックについて、学習します。
 
-- Configure the top-level `parserOptions` property like this:
+React コンポーネントから、カスタムフックでロジックを分離する利点や、実装方法について確認してください。
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+### 推奨技術
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+このプロジェクトの難易度と趣旨を踏まえて、以下の使用をお勧めします。
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+- カスタムフックによるロジックの分離
+- Vite を用いた React 環境構築
+- TypeScript による型チェック
+- Tailwind CSS v4.0 を用いたスタイリング
+- shadcn/ui によるコンポーネントの導入
+- GitHub Pages へのデプロイ
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+---
+
+## 🎯 お題
+
+- 「ユーザーストーリー」を全て満たすアプリを構築してください。
+- 必要に応じて、スクリーンショットやデモサイトの URL を参照してください。
+- スタイルは、あなた自身で独自にカスタマイズすることが可能です。
+
+### 必須機能
+
+1. **チャレンジ問題の管理**：
+   - 複数の課題の表示・選択ができる
+2. **コードエディタ**：
+   - コードを入力・編集できるエディタを実装する。
+   - 入力したコードの実行・リセットができる。
+3. **コード検証**：
+   - 入力されたコードを実行し、正誤判定を行う。
+   - エラーメッセージを適切に表示する。
+
+## ユーザーストーリー
+
+- [ ] ユーザーがサイトにアクセスすると、複数のチャレンジ課題が表示されている。
+- [ ] ユーザーは、課題を選択することができる。
+- [ ] 課題の詳細画面では、説明・ヒントを確認することができる。
+- [ ] コードエディタには、課題に応じたテンプレートコードが入力されている。
+- [ ] ユーザーはコードを編集し、「**Run Code**」ボタンをクリックして、結果を確認できる。
+- [ ] コードが正しい場合は、成功メッセージが表示される。
+- [ ] コードにエラーがある場合は、エラー内容が表示される。
+- [ ] アプリケーションがデプロイされており、誰でもアクセス可能である。
