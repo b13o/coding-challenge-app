@@ -1,4 +1,4 @@
-<img width="1440" alt="Image" src="https://github.com/user-attachments/assets/fc6c24a0-7485-43f3-85e8-ffd7d7c305c2" />
+<img width="1440" alt="Image" src="https://github.com/user-attachments/assets/bc7d0573-50ee-4692-9742-29573fc1ca44" />
 
 # コーディングチャレンジアプリ
 
